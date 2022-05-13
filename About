@@ -1,0 +1,34 @@
+Cette compétition fait partie du programme Zindi Trailblazers. Zindi Trailblazers est une nouvelle initiative conçue pour soutenir les futurs praticiens des données tout au long de leur carrière. Compléter votre profil et faire une soumission qui bat la référence sur les classements public et privé de ce concours vous qualifie automatiquement en tant que Trailblazer. Les pionniers seront pré-qualifiés pour certains emplois sur Zindi et recevront un coaching CV de l'équipe de recrutement de Zindi.
+
+Les ménages dirigés par des femmes ont augmenté en Afrique du Sud ces dernières années. Par rapport aux ménages dirigés par un homme, les ménages dirigés par une femme ont tendance à faire face à des défis sociaux et économiques plus importants. Les ménages dirigés par des femmes, en général, sont plus vulnérables aux revenus des ménages plus faibles et aux taux de pauvreté plus élevés.
+
+Le recensement sud-africain recueille des données sur les femmes chefs de famille et les niveaux de revenu de chaque ménage à travers le pays tous les 10 ans. Cependant, il est important que les décideurs politiques et les autres acteurs disposent d'estimations précises de ces statistiques, même entre les années de recensement. Ce défi explore comment l'apprentissage automatique peut aider à améliorer le suivi des indicateurs clés au niveau des quartiers entre les années de recensement.
+
+L'objectif de ce défi est de construire un modèle prédictif qui estime avec précision le pourcentage de ménages par quartier qui sont dirigés par une femme et vivent en dessous d'un seuil de revenu particulier, en utilisant des points de données qui peuvent être collectés par d'autres moyens sans une enquête intensive sur les ménages comme le recensement.
+
+Cette solution peut potentiellement réduire le coût et améliorer la précision du suivi des indicateurs clés de la population tels que la femme chef de ménage et le niveau de revenu entre les années de recensement. Les solutions gagnantes seront rendues publiques à la fin du concours.
+
+Evaluation
+
+The error metric for this competition is the Root Mean Squared Error.
+
+For every row in the dataset, submission files should contain 2 columns: ward and target.
+
+Your submission file should look like this:
+
+ward                target
+21001001: Ward 1    67.895
+21001001: Ward 2    34.087
+21001001: Ward 3    55.987
+
+Sur
+
+L'Afrique du Sud est divisée en plus de 4 000 quartiers. Nous avons agrégé l'indicateur cible et les autres variables prédictives du recensement de 2011 dans tous les ménages de chaque quartier pour créer une valeur agrégée de chaque indicateur par quartier.
+
+La variable cible d'intérêt est le pourcentage de ménages par quartier qui sont à la fois dirigés par une femme et gagnent un revenu annuel inférieur à 19 600 R (environ 2 300 USD en 2011). Pour le contexte, le seuil de pauvreté en Afrique du Sud est défini à 1 183 rands par mois et par personne et le salaire individuel moyen en Afrique du Sud est de 20 860 rands par mois.
+
+L'objectif de ce défi est de modéliser avec précision l'indicateur cible à l'aide des variables prédictives fournies dans les jeux de données. Pour les besoins de ce concours, nous avons divisé les services en un ensemble d'entraînement et de test. Vous entraînerez votre modèle sur les 2 822 quartiers de la rame et appliquerez votre modèle aux 1 013 quartiers de l'ensemble de test.
+
+Les plates-formes et logiciels SIG ne peuvent pas être utilisés dans ce concours.
+
+
